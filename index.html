@@ -28,6 +28,19 @@
     .card {
       min-height: 100%;
     }
+    
+    .card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.card {
+  min-height: 100%;
+  overflow: hidden; 
+
+.card-img-top:hover {
+  transform: scale(1.05);
+}
+
 
     footer {
       background: #f8f9fa;
@@ -42,11 +55,12 @@
       transform: scale(1.1);
     }
 
-    .navbar .nav-link.active {
-      font-weight: bold;
-      color: #0d6efd !important;
-      border-bottom: 2px solid #0d6efd;
-    }
+  .navbar .nav-link.active {
+  font-weight: bold;
+  color: #006400 !important;
+  border-bottom: 2px solid #006400;
+}
+
 
     html {
       scroll-behavior: smooth;
@@ -58,22 +72,24 @@
   </style>
 </head>
 <body id="top">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#top">Sosial Tədqiqatlar Mərkəzi |</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#top">Ana Səhifə</a></li>
-          <li class="nav-item"><a class="nav-link" href="#features">Xüsusiyyətlər</a></li>
-          <li class="nav-item"><a class="nav-link" href="#prices">Qiymətlər</a></li>
-          <li class="nav-item"><a class="nav-link disabled" aria-disabled="true">Deaktiv</a></li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="#top">
+      <img src="./img/logo.png" alt="Logo" width="60" height="60" class="me-2">
+      
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#top">Ana Səhifə</a></li>
+        <li class="nav-item"><a class="nav-link" href="#features">Xüsusiyyətlər</a></li>
+        <li class="nav-item"><a class="nav-link" href="#prices">Qiymətlər</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <div id="carouselExampleAutoplaying" class="carousel slide m-3" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -211,6 +227,17 @@
       </div>
     </div>
   </div>
+  <div class="container my-5">
+  <h2 class="text-center mb-4">Ünvanımız</h2>
+  <div class="ratio ratio-16x9">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.7113425574323!2d49.867092!3d40.409264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d85a50a8bdb%3A0xb602f0666484d2cd!2sBaku%2C%20Azerbaijan!5e0!3m2!1sen!2s!4v1634567890123!5m2!1sen!2s" 
+      style="border:0;" allowfullscreen="" loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</div>
+
 
   <footer class="text-center">
     <div class="container">
