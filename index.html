@@ -23,12 +23,7 @@
         box-shadow: 0 4px 6px -6px #006400;
       }
       
-      /* LOGO STİLİ: Arxasındakı Ağ Fonun Yığışdırılması/Gizlədilməsi */
       .navbar-brand img {
-          /* Əgər loqonuz PNG-dir və şəffafdırsa, bu stil loqonu qara fona uyğunlaşdırır. */
-          /* Əgər loqo ağ fondadırsa, onu invert etmək (rənglərini tərsinə çevirmək) lazım gələ bilər: */
-          /* filter: invert(1); */
-          /* Amma əsasən, loqonun arxasındakı ağ hissəni görməmək üçün sadəcə qara fona qoymaq kifayətdir. */
           background-color: transparent; /* Şəffaf fonda qalsın */
           border-radius: 5px; /* Kiçik yumşaq kənar */
       }
@@ -1089,16 +1084,13 @@
             }
             
 
-            // 5. HTML dil atributunu yeniləyin (SEO və Accessibility üçün)
             document.documentElement.lang = langCode;
 
-            // 6. Seçilmiş dili yaddaşda saxlayın (səhifə yenilənəndə itməsin)
             if (saveToStorage) {
                 localStorage.setItem('currentLang', langCode);
             }
         }
         
-        // Səhifə yüklənəndə yaddaşdakı dili tətbiq edin
         document.addEventListener('DOMContentLoaded', () => {
             const savedLang = localStorage.getItem('currentLang') || 'az';
             setLanguage(savedLang, false); // Yaddaşa yenidən yazmasın
