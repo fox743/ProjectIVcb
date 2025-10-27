@@ -102,7 +102,67 @@
           height: 300px;
         }
       }
+      /* --- TELEFONDA KARUSEL YAZILARINI GİZLƏTMƏK ÜÇÜN --- */
+@media (max-width: 767.98px) {
+  .carousel-caption {
+    display: none !important;
+  }
+}
+/* Accordion stili (Strateqiyamız bölməsi) - Saytın Tünd Boz Fonuna Uyğunlaşdırma */
+.accordion-item {
+  /* Accordion elementlərinin arxa planı saytın istifadə etdiyi tünd boz olsun */
+  background-color: #2c2c2c !important;
+  /* Konturu tünd yaşıl olsun */
+  border: 1px solid #006400 !important;
+  margin-bottom: 5px;
+}
 
+.accordion-header .accordion-button {
+  /* Başlıq düyməsinin arxa planı tünd boz olsun */
+  background-color: #2c2c2c !important;
+  /* Mətnin rəngi açıq boz olsun (Oxunması üçün) */
+  color: #e0e0e0 !important; 
+  /* Kənar kölgəni aradan qaldırır */
+  box-shadow: none !important;
+}
+
+.accordion-header .accordion-button:focus {
+  /* Fokus zamanı yaranan çərçivəni parlaq yaşıl kölgə ilə əvəz edir */
+  border-color: #00ff00;
+  box-shadow: 0 0 0 0.25rem rgba(0, 255, 0, 0.25); /* Parlaq yaşıl kölgə */
+}
+
+/* Açılmış (expanded) düymənin stili */
+.accordion-header .accordion-button:not(.collapsed) {
+  /* Aktiv düymənin alt sərhəddi parlaq yaşıl olsun */
+  border-bottom: 1px solid #00ff00;
+  /* Aktiv düymənin mətni parlaq yaşıl olsun */
+  color: #00ff00 !important;
+  /* Açılmış düymənin arxa planı bir az daha tünd (qara) ola bilər, fərqlənmək üçün */
+  background-color: #1a1a1a !important; 
+}
+
+/* Gövdə (body) stili */
+.accordion-body {
+  /* Gövdənin arxa planı saytın tünd boz rəngi olsun */
+  background-color: #2c2c2c !important;
+  /* Mətnin rəngi açıq boz olsun */
+  color: #cccccc !important;
+  border-top: none !important;
+}
+
+/* Vurğulanmış mətnin rəngi (Qrant Agentliyinin adı) */
+.accordion-body strong {
+    color: #00ff00 !important; /* Parlaq yaşıl */
+}
+
+/* Accordionun ümumi konteynerinə sərhəd əlavə edirik, bütün komponenti əhatə etsin */
+#accordionExample {
+    /* Bütün Accordion konteynerinə kənar xətt əlavə edir */
+    border: 3px solid #006400; 
+    border-radius: 5px;
+    padding: 1px; /* Sərhədin düzgün görünməsi üçün */
+}
 
       /* Başlıq Stili */
       h1.display-3,
@@ -161,6 +221,73 @@
         border-top: 3px solid #006400;
         color: #cccccc;
       }
+      /* --- SİZİN İSTƏKLƏRİNİZƏ ƏSASƏN ƏLAVƏLƏR --- */
+
+
+
+/* 2. Navbar menyu bəndlərinin rənglənməsi (Logo rənglərinə uyğun) */
+
+/* Ana Səhifə - Qırmızı */
+.navbar-nav .nav-item:nth-child(1) .nav-link {
+  color: #00ff00 !important;
+}
+
+/* Haqqımızda - Yaşıl (Sizin mövcud yaşıl rənginiz) */
+.navbar-nav .nav-item:nth-child(2) .nav-link {
+  color: #00ff00 !important;
+}
+
+/* Qalereya - Mavi */
+.navbar-nav .nav-item:nth-child(3) .nav-link {
+  color: #00ff00 !important;
+}
+
+/* Fəaliyyətlər - Bənövşəyi */
+.navbar-nav .nav-item:nth-child(4) .nav-link {
+  color: #00ff00 !important;
+}
+
+/* 2. Navbar menyu bəndlərinin rənglənməsi (Logo rənglərinə uyğun) */
+
+/* Ana Səhifə - Qırmızı */
+.navbar-nav .nav-item:nth-child(1) .nav-link {
+  color: #00ff00 !important;
+}
+.navbar-nav .nav-item:nth-child(1) .nav-link:hover {
+  color: #66ff66 !important;
+}
+
+/* Haqqımızda - Yaşıl */
+.navbar-nav .nav-item:nth-child(2) .nav-link {
+  color: #00ff00 !important;
+}
+.navbar-nav .nav-item:nth-child(2) .nav-link:hover {
+  color: #66ff66 !important;
+}
+
+/* Qalereya - Mavi */
+.navbar-nav .nav-item:nth-child(3) .nav-link {
+  color: #00ff00 !important;
+}
+.navbar-nav .nav-item:nth-child(3) .nav-link:hover {
+  color: #66ff66 !important;
+}
+
+/* Fəaliyyətlər - Bənövşəyi */
+.navbar-nav .nav-item:nth-child(4) .nav-link {
+  color: #00ff00 !important;
+}
+.navbar-nav .nav-item:nth-child(4) .nav-link:hover {
+  color: #66ff66 !important;
+}
+
+/* Tərəfdaşlar - Qırmızı (Sıra təkrarlanır) */
+.navbar-nav .nav-item:nth-child(5) .nav-link {
+  color: #00ff00 !important;
+}
+.navbar-nav .nav-item:nth-child(5) .nav-link:hover {
+  color:#66ff66 !important;
+}
       
     </style>
   </head>
@@ -169,7 +296,7 @@
       <div class="container-fluid">
         <a class="navbar-brand d-flex align-items-center" href="#top">
           <img
-            src="./img/logo.png" 
+            src="./img/logopng.png" 
             alt="Logo"
             width="60"
             height="60"
